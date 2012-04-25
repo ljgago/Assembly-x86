@@ -1,0 +1,171 @@
+{ "name": "Assembly x86 Intel",
+  "scopeName": "source.asm",
+  "fileTypes": ["asm", "ASM"],
+  "patterns": [
+    { 
+      "name": "support.class.8086/8088",
+      "match": "\\b(?i:aaa|aad|aam|aas|adc|add|and|call|cbw|clc|cld|cli|cmc|cmp|cmpsb|cmpsw|cwd|daa|das|dec|div|esc|hlt|idiv|imul|in|inc|int|into|iret|ja|jae|jb|jbe|jc|jcxz|je|jg|jge|jl|jle|jna|jnae|jnb|jnbe|jnc|jne|jng|jnge|jnl|jnle|jno|jnp|jns|jnz|jo|jp|jpe|jpo|js|jz|jmp|lahf|lar|lds|lea|les|lock|lodsb|lodsw|loop|loope|loopz|loopnz|loopne|mov|movsb|movsw|mul|neg|nop|not|or|out|pop|popf|push|pushf|rcl|rcr|rep|repe|repne|repnz|repz|ret|retn|retf|rol|ror|sahf|sal|sar|sbb|scasb|scasw|shl|shr|stc|std|sti|stosb|stosw|sub|test|wait|xchg|xlat||xor)\\b",
+      "captures": {
+        "1": {"name": "support.class.8086/8088" }
+      },
+      "comment": "Function 8086/8088 case insensitive"
+    },
+
+    { "name": "support.class.80186/80188",
+      "match": "\\b(?i:bound|enter|ins|leave|outs|popa|pusha)\\b",
+      "captures": {
+        "1": { "name": "support.class.80186/80188" }
+      },
+      "comment": "Function 80186/80188 case insensitive"
+    },
+
+    { "name": "support.class.80286",
+      "match": "\\b(?i:arpl|clts|lar|lgdt|lidt|lldt|lmsw|loadall|lsl|ltr|sgdt|sidt|sldt|smsw|str|verr|verw)\\b",
+      "captures": {
+        "1": { "name": "support.class.80286" }
+      },
+      "comment": "Function 80286 case insensitive"
+    },
+
+    { "name": "support.class.80386",
+      "match": "\\b(?i:bsf|bsr|bt|btc|btr|bts|cdq|cmpsd|cwde|insb|insw|insd|iret|iretd|jcxz|jecxz|lsf|lgs|lss|lodsd|loopw|loopd|loopew|looped|loopzw|loopzd|loopnew|loopned|loopnzw|loopnzd|movsw|movsd|movsx|movzx|popad|popfd|pushad|pushfd|scasd|seta|setae|setb|setbe|setc|sete|setg|setge|setl|setle|setna|setnae|setnb|setnbe|setnc|setne|setng|setnge|setnl|setnle|setno|setnp|setns|setnz|seto|setp|setpe|setpo|sets|setz|shld|shrd|stosb|stosw)\\b",
+      "captures": {
+        "1": { "name": "support.class.80386" }
+      },
+      "comment": "Function 80386 case insensitive"
+    },
+
+    { "name": "support.class.80486",
+      "match": "\\b(?i:bswap|cmpxchg|invd|invlpg|wbinvd|xadd)\\b",
+      "captures": {
+        "1": { "name": "support.class.80484" }
+      },
+      "comment": "Function 80486 case insensitive"
+    },
+
+    { "name": "support.class.pentium",
+      "match": "\\b(?i:cpuid|cmpxchg8b|rdmsr|rdtsc|wrmsr|rsm)\\b",
+      "captures": {
+        "1": { "name": "support.class.pentium" }
+      },
+      "comment": "Function Pentium case insensitive"
+    },
+
+    { "name": "support.class.mmx",
+      "match": "\\b(?i:rdpmc|emms|movd|movq|packssdw|packsswb|packuswb|paddb|paddd|paddsb|paddsw|paddusb|paddusw|paddw|pand|pandn|pcmpeqb|pcmpeqd|pcmpeqw|pcmpgtb|pcmpgtd|pcmpgtw|pmaddwd|pmulhw|pmullw|por|pslld|psllq|psllw|psrad|psraw|psrld|psrlq|psrlw|psubb|psubd|psubsb|psubsw|psubusb|psubusw|psubw|punpckhbw|punpckhdq|punpckhwd|punpcklbw|punpckldq|punpcklwd|pxor|paveb|paddsiw|pmagw|pdistib|psubsiw|pmvzb|pmulhrw|pmvnzb|pmvlzb|pmvgezb|pmulhriw|pmachriw)\\b",
+      "captures": {
+        "1": { "name": "support.class.mmx" }
+      },
+      "comment": "Function Pentium MMX case insensitive"
+    },
+
+    { "name": "support.class.3dnow!",
+      "match": "\\b(?i:syscall|sysret|femms|pavgusb|pf2id|pfacc|pfadd|pfcmpeq|pfcmpge|pfcmpgt|pfmax|pfmin|pfmul|pfrcp|pfrcpit1|pfrcpit2|pfrsqit1|pfrsqrt|pfsub|pfsubr|pi2fd|pmulhrw|prefetch|prefetchw|pf2iw|pfnacc|pfpnacc|pi2fw|pswapd)\\b",
+      "captures": {
+        "1": { "name": "support.class.3dnow!" }
+      },
+      "comment": "Function Pentium case insensitive"
+    },
+
+    { "name": "support.class.pentiumpro",
+      "match": "\\b(?i:cmova|cmovae|cmovb|cmovbe|cmovc|cmove|cmovg|cmovge|cmovl|cmovle|cmovna|cmovnae|cmovnb|cmovnbe|cmovnc|cmovne|cmovng|cmovnge|cmovnl|cmovnle|cmovno|cmovnp|cmovns|cmovnz|cmovo|cmovp|cmovpe|cmovpo|cmovs|cmovz|sysenter|sysexit|ud2|fcmov|fcmovb|fcmovbe|fcmove|fcmovnb|fcmovnbe|fcmovne|fcmovnu|fcmovu|fcomi|fcomip|fucomi|fucomip)\\b",
+      "captures": {
+        "1": { "name": "support.class.pentiumpro" }
+      },
+      "comment": "Function Pentium Pro case insensitive"
+    },
+
+    { "name": "support.class.sse",
+      "match": "\\b(?i:maskmovq|movntps|movntq|prefetch0|prefetch1|prefetch2|prefetchnta|sfence|fxrstor|fxsave)\\b",
+      "captures": {
+        "1": { "name": "support.class.sse" }
+      },
+      "comment": "Function SSE case insensitive"
+    },
+
+    { "name": "support.class.sse2",
+      "match": "\\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause)\\b",
+      "captures": {
+        "1": { "name": "support.class.sse2" }
+      },
+      "comment": "Function SSE2 case insensitive"
+    },
+
+    { "name": "support.class",
+      "match": "(?i:equ|org|label|byte|word|dword|qword|tbyte|near|far|struct|ends|offset|short|length|size|seg|public|extern|db|dw|dd|dq|dt|goto|\\.code|\\.data|\\.stack|\\.model|\\.end)",
+      "captures": {
+        "1": { "name": "support.class.constant" }
+      },
+      "comment": "constant names case insensitive"
+    },
+
+    {  "name": "entity.name.function.reg",
+       "match": "\\b(?i:al|ah|ax|eax|bl|bh|bx|ebx|cl|ch|cx|ecx|dl|dh|dx|edx|si|esi|di|edi|bp|ebp|sp|esp|cs|ds|ss|es|fs|gs|ip|eip|eflags|id|vip|vif|ac|vm|rf|nt|iopl|of|df|if|tf|sf|zf|af|pf|cf|st0|st1|st2|st3|st4|st5|st6|st7|mm0|mm1|mm2|mm3|mm4|mm5|mm6|mm7|xmm0|xmm1|xmm2|xmm3|xmm4|xmm5|xmm6|xmm7|xmcrt|cr0|cr2|cr3|cr4|gdtr|ldtr|idtr|dr0|dr1|dr2|dr3|dr6|dr7|msr|rax|rbx|rcx|rdx|rsi|rdi|rsp|rbp|r8|r9|r10|r11|r12|r13|r14|r15|r8d|r9d|r10d|r11d|r12d|r13d|r14d|r15d|r8w|r9w|r10w|r11w|r12w|r13w|r14w|r15w|r8l|r9l|r10l|r11l|r12l|r13l|r14l|r15l)\\b",
+       "captures": {
+           "1": { "name": "entity.name.function.reg" }
+       },
+       "comment": "Names registers case insensitive"
+      },
+
+    { "name": "comment.line",
+      "match": "\\s?(;.*)$",
+      "captures": {
+        "1": { "name": "comment.line" }
+      },
+      "comment": "Comment line ';'"
+    },
+
+    { "name": "constant.numeric.dec",
+      "match": "\\b([0-9]+)\\b",
+      "captures": {
+          "1": { "name": "constant.numeric.dec" }
+      },
+      "comment": "Decimal numbers"
+    },
+
+    { "name": "constant.numeric.hex",
+      "match": "\\b(0x[0-9a-fA-F]+)\\b",
+      "captures": {
+        "1": { "name": "constant.numeric.hex" }
+      },
+      "comment": "Exadecimal numbers format: 0xFF"
+
+    },
+
+    { "name": "constant.numeric.hex",
+      "match": "\\b([0-9a-fA-F]+h)\\b",
+      "captures": {
+        "1": { "name": "constant.numeric.hex" }
+      },
+      "comment": "Exadecimal numbers format: FFh"
+
+    },
+
+    { "name": "constant.numeric.bin",
+      "match": "\\b([0-1]+b)\\b",
+      "captures": {
+        "1": { "name": "constant.numeric.bin" }
+      },
+      "comment": "Binary numbers format: 100101b"
+    },
+
+    { "name": "string.quoted",
+      "match": "(?<!\\$)(['\"])(.*)\\1(?!\\$)",
+      "captures": {
+        "1": { "name": "string.quoted" }
+      },
+      "comment": "String caracter"
+    },
+
+    { "name": "keyword.control.label",
+      "match": "(\\w+[:])",
+      "captures": {
+          "0": { "name": "keyword.control.label" }
+      },
+      "comment": "Assembly label"
+    }
+    
+  ],
+  "uuid": "94483e06-77e4-431e-be96-a456fe05c523"
+}
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>s</string>
+		<string>S</string>
+	</array>
+	<key>name</key>
+	<string>Assembly x86 AT&amp;T</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.functions</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function names case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:aaa|aad|aam|aas|adc|add|addpd|addps|addsd|addss|addsubpd|aesdec|aesdeclast|aesenc|aesenclast|aesimc|aeskeygenassist|and|andpd|andps|andnpd|andnps|arpl|blendpd|blendps|blendvpd|blendvps|bound|bsf|bsr|bswap|bt|btc|btr|bts|call|cbw|cdq|scdqe|clc|cld|clflush|cli|clts|cmc|cmov|cmp|cmppd|cmpps|cmpsb|cmpsw|cmpsd|cmpsq|cmpsd|cmpss|cmpxchg|cmpxchg8b|cmpxchg16b|comisd|comiss|cpuid|crc32|cvtdq2pd|cvtdq2ps|cvtpd2dq|cvtpd2pi|cvtpd2ps|cvti2pd|cvtpi2ps|cvtps2dq|cvtps2pd|cvtps2pi|cvtsd2si|cvtsd2ss|cvtsi2sd|cvtsi2ss|cvtss2sd|cvtss2si|cvttpd2dq|cvttpd2pi|cvttps2dq|cvttps2pi|cvttsd2si|cvttss2si|cwd|cqo|cwde|daa|das|dec|div|divpd|divps|divsd|divss|dppd|dpps|emms|enter|extractps|esc|hlt|idiv|imul|in|inc|ins|int|into|invd|invlpg|iret|iretd|ja|jae|jb|jbe|jc|jcxz|je|jecxz|jg|jge|jl|jle|jmp|jna|jnae|jnb|jnbe|jnc|jne|jng|jnge|jnl|jnle|jno|jnp|jns|jnz|jo|jp|jpe|jpo|js|jz|lahf|lar|lds|lea|leave|les|lfs|lgdt|lidt|lgs|lldt|lmsw|lock|lods|loop|loope|loopz|loopnz|loopne|lsl|lss|ltr|mov|movs|movsx|movzx|mul|neg|nop|not|or|out|outs|pop|popa|popad|popf|popfd|push|pusha|pushad|pushf|pushfd|rcl|rcr|rep|repe|repz|repne|repnz|ret|retf|rol|ror|sahf|sal|sar|sbb|scas|setae|setnb|setb|setnae|setbe|setna|sete|setz|setne|setnz|setl|setnge|setge|setng|setle|setng|setg|setnle|sets|setns|setc|setnc|seto|setno|setp|setpe|setnp|setpo|sgdt|sidt|shl|shld|shrd|sldt|smsw|stc|std|sti|stos|str|sub|test|verr|verw|wait|fwait|wait|fwait|wbinvd|xchg|xlat|xlatb|xor)\b</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.s</string>
+	<key>uuid</key>
+	<string>25754b00-678c-41d3-8900-edfd46171dab</string>
+</dict>
+</plist>
