@@ -177,13 +177,52 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+<<<<<<< HEAD
+=======
+					<string>support.class.sse.float</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function SSE case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:addps|addss|cmpps|cmpss|comiss|cvtpi2ps|cvtps2pi|cvtsi2ss|cvtss2si|cvttps2pi|cvttss2si|divps|divss|ldmxcsr|maxps|maxss|minps|minss|movaps|movhlps|movhps|movlhps|movlps|movmskps|movntps|movss|movups|mulps|mulss|rcpps|rcpss|rsqrtps|rsqrtss|shufps|sqrtps|sqrtss|stmxcsr|subps|subss|ucomiss|unpckhps|unpcklps)\b</string>
+			<key>name</key>
+			<string>support.class.sse.simd.float</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.sse.int</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function SSE case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:andnps|andps|orps|pavgb|pavgw|pextrw|pinsrw|pmaxsw|pmaxub|pminsw|pminub|pmovmskb|pmulhuw|psadbw|pshufw|xorps|maskmovq|psadbw|pmaxsw|pminsw|movntq|pmulhuw|pavgw|pavgb|pmaxub|pminub|pmovmskb|shufps|pextrw|pinsrw|cmpss|cmpps|sfence|stmxcsr|ldmxcsr|pshufw|maxss|maxps|divss|divps|minss|minps|subss|subps|mulss|mulps|addss|addps|xorps|orps|andnps|andps|rcpss|rcpps|rsqrtss|rsqrtp|sqrtss|sqrtps|comiss|ucomiss|cvtss2si|cvtps2pi|cvttss2si|cvttps2pi|movntps|cvtsi2ss|cvtpi2ps|movaps|movaps|prefetch2|prefetch1|prefetch0|prefetchnta|movhps|movlhps|movhps|unpckhps|unpcklps|movlps|movhlps|movlps|movss|movups|movss|movups)\b</string>
+			<key>name</key>
+			<string>support.class.sse.int</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+>>>>>>> dev
 					<string>support.class.sse2</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>Function SSE2 case insensitive</string>
 			<key>match</key>
+<<<<<<< HEAD
 			<string>\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause)\b</string>
+=======
+			<string>\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause|addpd|addsd|andnpd|andpd|cmppd|cmpsd|comisd|cvtdq2pd|cvtdq2ps|cvtpd2dq|cvtpd2pi|cvtpd2ps|cvtpi2pd|cvtps2dq|cvtps2pd|cvtsd2si|cvtsd2ss|cvtsi2sd|cvtss2sd|cvttpd2dq|cvttpd2pi|cvttps2dq|cvttsd2si|divpd|divsd|maxpd|maxsd|minpd|minsd|movapd|movhpd|movlpd|movmskpd|movsd|movupd|mulpd|mulsd|orpd|shufpd|sqrtpd|sqrtsd|subpd|subsd|ucomisd|unpckhpd|unpcklpd|xorpd|movdq2q|movdqa|movdqu|movq2dq|paddq|psubq|pmuludq|pshufhw|pshuflw|pshufd|pslldq|psrldq|punpckhqdq|punpcklqdq)\b</string>
+>>>>>>> dev
 			<key>name</key>
 			<string>support.class.sse2</string>
 		</dict>
@@ -193,13 +232,84 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+<<<<<<< HEAD
+=======
+					<string>support.class.sse3</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function SSE3 case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:addsubpd|addsubps|haddpd|haddps|hsubpd|hsubps|movddup|movshdup|movsldup|psignw|psignd|psignb|pshufb|pmulhrsw|pmaddubsw|phsubw|phsubsw|phsubd|phaddw|phaddsw|phaddd|palignr|pabsw|pabsd|pabsb)\b</string>
+			<key>name</key>
+			<string>support.class.sse3</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.sse4</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function SSE4 case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:mpsadbw|phminposuw|pmulld|pmuldq|dpps|dppd|blendps|blendpd|blendvps|blendvpd|pblendvb|pblendw|pminsb|pmaxsb|pminuw|pmaxuw|pminud|pmaxud|pminsd|pmaxsd|roundps|roundss|roundpd|roundsd|insertps|pinsrb|pinsrd|pinsrq|extractps|pextrb|pextrw|pextrd|pextrq|pmovsxbw|pmovzxbw|pmovsxbd|pmovzxbd|pmovsxbq|pmovzxbq|pmovsxwd|pmovzxwd|pmovsxwq|pmovzxwq|pmovsxdq|pmovzxdq|ptest|pcmpeqq|packusdw|movntdqa|lzcnt|popcnt|extrq|insertq|movntsd|movntss|crc32|pcmpestri|pcmpestrm|pcmpistri|pcmpistrm|pcmpgtq)\b</string>
+			<key>name</key>
+			<string>support.class.sse4</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.avx-fma</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function Intel AVX FMA case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:vfmaddpd|vfmaddps|vfmaddsd|vfmaddss|vfmaddsubpd|vfmaddsubps|vfmsubaddpd|vfmsubaddps|vfmsubpd|vfmsubps|vfmsubsd|vfmsubss|vfnmaddpd|vfnmaddps|vfnmaddsd|vfnmaddss|vfnmsubpd|vfnmsubps|vfnmsubsd|vfnmsubss)\b</string>
+			<key>name</key>
+			<string>support.class.avx-fma</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.aes</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function SSE4 case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:aesenc|aesenclast|aesdec|aesdeclast|aeskeygenassist|aesimc)\b</string>
+			<key>name</key>
+			<string>support.class.aes</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+>>>>>>> dev
 					<string>support.class.constant</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>constant names case insensitive</string>
 			<key>match</key>
+<<<<<<< HEAD
 			<string>(?i:equ|org|label|byte|word|dword|qword|tbyte|near|far|struct|ends|offset|short|length|size|seg|public|extern|db|dw|dd|dq|dt|goto|\.code|\.data|\.stack|\.model|\.end)</string>
+=======
+			<string>(?i:\.code|\.data|\.stack|\.model|\.end)</string>
+>>>>>>> dev
 			<key>name</key>
 			<string>support.class</string>
 		</dict>
@@ -225,6 +335,41 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
+<<<<<<< HEAD
+=======
+					<string>keyword.control</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Names Pseudo Instructions case insensitive</string>
+			<key>match</key>
+			<string>(?i:db|dw|dd|dq|dt|do|resb|resw|resd|resq|rest|reso|incbin|equ|times|byte|word|dword|qword|tbyte|nosplit|near|far|%define|%assign|%strlen|%substr|%macro|%endmacro|%rep|%rotate|%o|%if|%elif|else|org|label|struct|ends|offset|short|length|size|public|extern|goto|seg)</string>
+			<key>name</key>
+			<string>keyword.control</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.__types__</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Instruction float case insensitive</string>
+			<key>match</key>
+			<string>\b(?i:__float8__|__float16__|__float32__|__float64__|__float80m__|__float80e__|__float128l__|__float128h__|__Infinity__|__NaN__|__QNaN__|__SNaN__)\b</string>
+			<key>name</key>
+			<string>keyword.control.__types__</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+>>>>>>> dev
 					<string>comment.line</string>
 				</dict>
 			</dict>
