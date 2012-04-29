@@ -83,10 +83,6 @@
       "comment": "Function SSE case insensitive"
     },
 
-<<<<<<< HEAD
-    { "name": "support.class.sse2",
-      "match": "\\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause)\\b",
-=======
     { "name": "support.class.sse.simd.float",
       "match": "\\b(?i:addps|addss|cmpps|cmpss|comiss|cvtpi2ps|cvtps2pi|cvtsi2ss|cvtss2si|cvttps2pi|cvttss2si|divps|divss|ldmxcsr|maxps|maxss|minps|minss|movaps|movhlps|movhps|movlhps|movlps|movmskps|movntps|movss|movups|mulps|mulss|rcpps|rcpss|rsqrtps|rsqrtss|shufps|sqrtps|sqrtss|stmxcsr|subps|subss|ucomiss|unpckhps|unpcklps)\\b",
       "captures": {
@@ -105,17 +101,12 @@
 
     { "name": "support.class.sse2",
       "match": "\\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause|addpd|addsd|andnpd|andpd|cmppd|cmpsd|comisd|cvtdq2pd|cvtdq2ps|cvtpd2dq|cvtpd2pi|cvtpd2ps|cvtpi2pd|cvtps2dq|cvtps2pd|cvtsd2si|cvtsd2ss|cvtsi2sd|cvtss2sd|cvttpd2dq|cvttpd2pi|cvttps2dq|cvttsd2si|divpd|divsd|maxpd|maxsd|minpd|minsd|movapd|movhpd|movlpd|movmskpd|movsd|movupd|mulpd|mulsd|orpd|shufpd|sqrtpd|sqrtsd|subpd|subsd|ucomisd|unpckhpd|unpcklpd|xorpd|movdq2q|movdqa|movdqu|movq2dq|paddq|psubq|pmuludq|pshufhw|pshuflw|pshufd|pslldq|psrldq|punpckhqdq|punpcklqdq)\\b",
->>>>>>> dev
       "captures": {
         "1": { "name": "support.class.sse2" }
       },
       "comment": "Function SSE2 case insensitive"
     },
 
-<<<<<<< HEAD
-    { "name": "support.class",
-      "match": "(?i:equ|org|label|byte|word|dword|qword|tbyte|near|far|struct|ends|offset|short|length|size|seg|public|extern|db|dw|dd|dq|dt|goto|\\.code|\\.data|\\.stack|\\.model|\\.end)",
-=======
     { "name": "support.class.sse3",
       "match": "\\b(?i:addsubpd|addsubps|haddpd|haddps|hsubpd|hsubps|movddup|movshdup|movsldup|psignw|psignd|psignb|pshufb|pmulhrsw|pmaddubsw|phsubw|phsubsw|phsubd|phaddw|phaddsw|phaddd|palignr|pabsw|pabsd|pabsb)\\b",
       "captures": {
@@ -150,22 +141,12 @@
 
     { "name": "support.class",
       "match": "(?i:\\.code|\\.data|\\.stack|\\.model|\\.end)",
->>>>>>> dev
       "captures": {
         "1": { "name": "support.class.constant" }
       },
       "comment": "constant names case insensitive"
     },
 
-<<<<<<< HEAD
-    {  "name": "entity.name.function.reg",
-       "match": "\\b(?i:al|ah|ax|eax|bl|bh|bx|ebx|cl|ch|cx|ecx|dl|dh|dx|edx|si|esi|di|edi|bp|ebp|sp|esp|cs|ds|ss|es|fs|gs|ip|eip|eflags|id|vip|vif|ac|vm|rf|nt|iopl|of|df|if|tf|sf|zf|af|pf|cf|st0|st1|st2|st3|st4|st5|st6|st7|mm0|mm1|mm2|mm3|mm4|mm5|mm6|mm7|xmm0|xmm1|xmm2|xmm3|xmm4|xmm5|xmm6|xmm7|xmcrt|cr0|cr2|cr3|cr4|gdtr|ldtr|idtr|dr0|dr1|dr2|dr3|dr6|dr7|msr|rax|rbx|rcx|rdx|rsi|rdi|rsp|rbp|r8|r9|r10|r11|r12|r13|r14|r15|r8d|r9d|r10d|r11d|r12d|r13d|r14d|r15d|r8w|r9w|r10w|r11w|r12w|r13w|r14w|r15w|r8l|r9l|r10l|r11l|r12l|r13l|r14l|r15l)\\b",
-       "captures": {
-           "1": { "name": "entity.name.function.reg" }
-       },
-       "comment": "Names registers case insensitive"
-      },
-=======
     { "name": "entity.name.function.reg",
       "match": "\\b(?i:al|ah|ax|eax|bl|bh|bx|ebx|cl|ch|cx|ecx|dl|dh|dx|edx|si|esi|di|edi|bp|ebp|sp|esp|cs|ds|ss|es|fs|gs|ip|eip|eflags|id|vip|vif|ac|vm|rf|nt|iopl|of|df|if|tf|sf|zf|af|pf|cf|st0|st1|st2|st3|st4|st5|st6|st7|mm0|mm1|mm2|mm3|mm4|mm5|mm6|mm7|xmm0|xmm1|xmm2|xmm3|xmm4|xmm5|xmm6|xmm7|xmcrt|cr0|cr2|cr3|cr4|gdtr|ldtr|idtr|dr0|dr1|dr2|dr3|dr6|dr7|msr|rax|rbx|rcx|rdx|rsi|rdi|rsp|rbp|r8|r9|r10|r11|r12|r13|r14|r15|r8d|r9d|r10d|r11d|r12d|r13d|r14d|r15d|r8w|r9w|r10w|r11w|r12w|r13w|r14w|r15w|r8l|r9l|r10l|r11l|r12l|r13l|r14l|r15l)\\b",
       "captures": {
@@ -205,7 +186,6 @@
       },
         "comment": "Names Pseudo Instructions case insensitive"
     },
->>>>>>> dev
 
     { "name": "comment.line",
       "match": "\\s?(;.*)$",
