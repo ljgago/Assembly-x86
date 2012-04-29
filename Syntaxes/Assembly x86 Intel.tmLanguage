@@ -177,8 +177,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-<<<<<<< HEAD
-=======
 					<string>support.class.sse.float</string>
 				</dict>
 			</dict>
@@ -211,18 +209,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
->>>>>>> dev
 					<string>support.class.sse2</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>Function SSE2 case insensitive</string>
 			<key>match</key>
-<<<<<<< HEAD
-			<string>\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause)\b</string>
-=======
 			<string>\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause|addpd|addsd|andnpd|andpd|cmppd|cmpsd|comisd|cvtdq2pd|cvtdq2ps|cvtpd2dq|cvtpd2pi|cvtpd2ps|cvtpi2pd|cvtps2dq|cvtps2pd|cvtsd2si|cvtsd2ss|cvtsi2sd|cvtss2sd|cvttpd2dq|cvttpd2pi|cvttps2dq|cvttsd2si|divpd|divsd|maxpd|maxsd|minpd|minsd|movapd|movhpd|movlpd|movmskpd|movsd|movupd|mulpd|mulsd|orpd|shufpd|sqrtpd|sqrtsd|subpd|subsd|ucomisd|unpckhpd|unpcklpd|xorpd|movdq2q|movdqa|movdqu|movq2dq|paddq|psubq|pmuludq|pshufhw|pshuflw|pshufd|pslldq|psrldq|punpckhqdq|punpcklqdq)\b</string>
->>>>>>> dev
 			<key>name</key>
 			<string>support.class.sse2</string>
 		</dict>
@@ -232,8 +225,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-<<<<<<< HEAD
-=======
 					<string>support.class.sse3</string>
 				</dict>
 			</dict>
@@ -298,18 +289,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
->>>>>>> dev
 					<string>support.class.constant</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>constant names case insensitive</string>
 			<key>match</key>
-<<<<<<< HEAD
-			<string>(?i:equ|org|label|byte|word|dword|qword|tbyte|near|far|struct|ends|offset|short|length|size|seg|public|extern|db|dw|dd|dq|dt|goto|\.code|\.data|\.stack|\.model|\.end)</string>
-=======
 			<string>(?i:\.code|\.data|\.stack|\.model|\.end)</string>
->>>>>>> dev
 			<key>name</key>
 			<string>support.class</string>
 		</dict>
@@ -335,8 +321,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-<<<<<<< HEAD
-=======
 					<string>keyword.control</string>
 				</dict>
 			</dict>
@@ -385,9 +369,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-<<<<<<< HEAD
->>>>>>> dev
-=======
 					<string>entity.name.function.directives</string>
 				</dict>
 			</dict>
@@ -404,7 +385,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
->>>>>>> dev
 					<string>comment.line</string>
 				</dict>
 			</dict>
