@@ -83,29 +83,109 @@
       "comment": "Function SSE case insensitive"
     },
 
+    { "name": "support.class.sse.simd.float",
+      "match": "\\b(?i:addps|addss|cmpps|cmpss|comiss|cvtpi2ps|cvtps2pi|cvtsi2ss|cvtss2si|cvttps2pi|cvttss2si|divps|divss|ldmxcsr|maxps|maxss|minps|minss|movaps|movhlps|movhps|movlhps|movlps|movmskps|movntps|movss|movups|mulps|mulss|rcpps|rcpss|rsqrtps|rsqrtss|shufps|sqrtps|sqrtss|stmxcsr|subps|subss|ucomiss|unpckhps|unpcklps)\\b",
+      "captures": {
+        "1": { "name": "support.class.sse.float" }
+      },
+      "comment": "Function SSE case insensitive"
+    },
+
+    { "name": "support.class.sse.int",
+      "match": "\\b(?i:andnps|andps|orps|pavgb|pavgw|pextrw|pinsrw|pmaxsw|pmaxub|pminsw|pminub|pmovmskb|pmulhuw|psadbw|pshufw|xorps|maskmovq|psadbw|pmaxsw|pminsw|movntq|pmulhuw|pavgw|pavgb|pmaxub|pminub|pmovmskb|shufps|pextrw|pinsrw|cmpss|cmpps|sfence|stmxcsr|ldmxcsr|pshufw|maxss|maxps|divss|divps|minss|minps|subss|subps|mulss|mulps|addss|addps|xorps|orps|andnps|andps|rcpss|rcpps|rsqrtss|rsqrtp|sqrtss|sqrtps|comiss|ucomiss|cvtss2si|cvtps2pi|cvttss2si|cvttps2pi|movntps|cvtsi2ss|cvtpi2ps|movaps|movaps|prefetch2|prefetch1|prefetch0|prefetchnta|movhps|movlhps|movhps|unpckhps|unpcklps|movlps|movhlps|movlps|movss|movups|movss|movups)\\b",
+      "captures": {
+        "1": { "name": "support.class.sse.int" }
+      },
+      "comment": "Function SSE case insensitive"
+    },
+
     { "name": "support.class.sse2",
-      "match": "\\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause)\\b",
+      "match": "\\b(?i:clflush|lfence|maskmovdqu|mfence|movntdq|movnti|movntpd|pause|addpd|addsd|andnpd|andpd|cmppd|cmpsd|comisd|cvtdq2pd|cvtdq2ps|cvtpd2dq|cvtpd2pi|cvtpd2ps|cvtpi2pd|cvtps2dq|cvtps2pd|cvtsd2si|cvtsd2ss|cvtsi2sd|cvtss2sd|cvttpd2dq|cvttpd2pi|cvttps2dq|cvttsd2si|divpd|divsd|maxpd|maxsd|minpd|minsd|movapd|movhpd|movlpd|movmskpd|movsd|movupd|mulpd|mulsd|orpd|shufpd|sqrtpd|sqrtsd|subpd|subsd|ucomisd|unpckhpd|unpcklpd|xorpd|movdq2q|movdqa|movdqu|movq2dq|paddq|psubq|pmuludq|pshufhw|pshuflw|pshufd|pslldq|psrldq|punpckhqdq|punpcklqdq)\\b",
       "captures": {
         "1": { "name": "support.class.sse2" }
       },
       "comment": "Function SSE2 case insensitive"
     },
 
+    { "name": "support.class.sse3",
+      "match": "\\b(?i:addsubpd|addsubps|haddpd|haddps|hsubpd|hsubps|movddup|movshdup|movsldup|psignw|psignd|psignb|pshufb|pmulhrsw|pmaddubsw|phsubw|phsubsw|phsubd|phaddw|phaddsw|phaddd|palignr|pabsw|pabsd|pabsb)\\b",
+      "captures": {
+        "1": { "name": "support.class.sse3" }
+      },
+      "comment": "Function SSE3 case insensitive"
+    },
+
+    { "name": "support.class.sse4",
+      "match": "\\b(?i:mpsadbw|phminposuw|pmulld|pmuldq|dpps|dppd|blendps|blendpd|blendvps|blendvpd|pblendvb|pblendw|pminsb|pmaxsb|pminuw|pmaxuw|pminud|pmaxud|pminsd|pmaxsd|roundps|roundss|roundpd|roundsd|insertps|pinsrb|pinsrd|pinsrq|extractps|pextrb|pextrw|pextrd|pextrq|pmovsxbw|pmovzxbw|pmovsxbd|pmovzxbd|pmovsxbq|pmovzxbq|pmovsxwd|pmovzxwd|pmovsxwq|pmovzxwq|pmovsxdq|pmovzxdq|ptest|pcmpeqq|packusdw|movntdqa|lzcnt|popcnt|extrq|insertq|movntsd|movntss|crc32|pcmpestri|pcmpestrm|pcmpistri|pcmpistrm|pcmpgtq)\\b",
+      "captures": {
+        "1": { "name": "support.class.sse4" }
+      },
+      "comment": "Function SSE4 case insensitive"
+    },
+
+    { "name": "support.class.avx-fma",
+      "match": "\\b(?i:vfmaddpd|vfmaddps|vfmaddsd|vfmaddss|vfmaddsubpd|vfmaddsubps|vfmsubaddpd|vfmsubaddps|vfmsubpd|vfmsubps|vfmsubsd|vfmsubss|vfnmaddpd|vfnmaddps|vfnmaddsd|vfnmaddss|vfnmsubpd|vfnmsubps|vfnmsubsd|vfnmsubss)\\b",
+      "captures": {
+        "1": { "name": "support.class.avx-fma" }
+      },
+      "comment": "Function Intel AVX FMA case insensitive"
+    },
+
+    { "name": "support.class.aes",
+      "match": "\\b(?i:aesenc|aesenclast|aesdec|aesdeclast|aeskeygenassist|aesimc)\\b",
+      "captures": {
+        "1": { "name": "support.class.aes" }
+      },
+      "comment": "Function SSE4 case insensitive"
+    },    
+
     { "name": "support.class",
-      "match": "(?i:equ|org|label|byte|word|dword|qword|tbyte|near|far|struct|ends|offset|short|length|size|seg|public|extern|db|dw|dd|dq|dt|goto|\\.code|\\.data|\\.stack|\\.model|\\.end)",
+      "match": "(?i:\\.code|\\.data|\\.stack|\\.model|\\.end)",
       "captures": {
         "1": { "name": "support.class.constant" }
       },
       "comment": "constant names case insensitive"
     },
 
-    {  "name": "entity.name.function.reg",
-       "match": "\\b(?i:al|ah|ax|eax|bl|bh|bx|ebx|cl|ch|cx|ecx|dl|dh|dx|edx|si|esi|di|edi|bp|ebp|sp|esp|cs|ds|ss|es|fs|gs|ip|eip|eflags|id|vip|vif|ac|vm|rf|nt|iopl|of|df|if|tf|sf|zf|af|pf|cf|st0|st1|st2|st3|st4|st5|st6|st7|mm0|mm1|mm2|mm3|mm4|mm5|mm6|mm7|xmm0|xmm1|xmm2|xmm3|xmm4|xmm5|xmm6|xmm7|xmcrt|cr0|cr2|cr3|cr4|gdtr|ldtr|idtr|dr0|dr1|dr2|dr3|dr6|dr7|msr|rax|rbx|rcx|rdx|rsi|rdi|rsp|rbp|r8|r9|r10|r11|r12|r13|r14|r15|r8d|r9d|r10d|r11d|r12d|r13d|r14d|r15d|r8w|r9w|r10w|r11w|r12w|r13w|r14w|r15w|r8l|r9l|r10l|r11l|r12l|r13l|r14l|r15l)\\b",
-       "captures": {
-           "1": { "name": "entity.name.function.reg" }
-       },
-       "comment": "Names registers case insensitive"
+    { "name": "entity.name.function.reg",
+      "match": "\\b(?i:al|ah|ax|eax|bl|bh|bx|ebx|cl|ch|cx|ecx|dl|dh|dx|edx|si|esi|di|edi|bp|ebp|sp|esp|cs|ds|ss|es|fs|gs|ip|eip|eflags|id|vip|vif|ac|vm|rf|nt|iopl|of|df|if|tf|sf|zf|af|pf|cf|st0|st1|st2|st3|st4|st5|st6|st7|mm0|mm1|mm2|mm3|mm4|mm5|mm6|mm7|xmm0|xmm1|xmm2|xmm3|xmm4|xmm5|xmm6|xmm7|xmcrt|cr0|cr2|cr3|cr4|gdtr|ldtr|idtr|dr0|dr1|dr2|dr3|dr6|dr7|msr|rax|rbx|rcx|rdx|rsi|rdi|rsp|rbp|r8|r9|r10|r11|r12|r13|r14|r15|r8d|r9d|r10d|r11d|r12d|r13d|r14d|r15d|r8w|r9w|r10w|r11w|r12w|r13w|r14w|r15w|r8l|r9l|r10l|r11l|r12l|r13l|r14l|r15l)\\b",
+      "captures": {
+        "1": { "name": "entity.name.function.reg" }
       },
+        "comment": "Names registers case insensitive"
+    },
+
+    { "name": "keyword.control",
+      "match": "(?i:db|dw|dd|dq|dt|do|resb|resw|resd|resq|rest|reso|incbin|equ|times|byte|word|dword|qword|tbyte|nosplit|near|far|org|label|struc|endstruc|istruc|iend|at|align|alignb|ends|offset|short|length|size|public|goto|seg|repeat|until)",
+      "captures": {
+        "1": { "name": "keyword.control" }
+      },
+        "comment": "Names Pseudo Instructions case insensitive"
+    },
+
+    { "name": "keyword.control",
+      "match": "(?i:%define|%assign|%strlen|%substr|%macro|%endmacro|%rep|%rotate|%o|%if|%elif|%else|%endif|%error|%ifmacro|%ifnmacro|%elifmacro|%elifnmacro|%ifctx|%ifnctx|%elifctx|%elifnctx|%ifind|%elifind|%ifnind|%elifnind|%ifindi|%elifindi|%ifnidni|%elifnidni|%ifid|%ifnum|%ifstr|%push|%pop|%clear|%arg|%stacksize|%local|%line|%!)",
+      "captures": {
+        "1": { "name": "keyword.control" }
+      },
+        "comment": "Names Pseudo Instructions case insensitive"
+    },
+
+    { "name": "keyword.control.__types__",
+      "match": "\\b(?i:__float8__|__float16__|__float32__|__float64__|__float80m__|__float80e__|__float128l__|__float128h__|__Infinity__|__NaN__|__QNaN__|__SNaN__|__NASM_MAJOR__|__NASM_MINOR__|__NASM_SUBMINOR__|__NASM_PATCHLEVEL__|__NASM_VERSION_ID__|__NASM_VER__|__FILE__|__LINE__|__BITS__|__DATE__|__TIME__|__DATE_NUM__|__TIME_NUM__|__UTC_DATE__|__UTC_TIME__|__UTC_DATE_NUM__|__UTC_TIME_NUM__|__POSIX_TIME__|__SECT__)\\b",
+      "captures": {
+        "1": { "name": "keyword.control.__types__" }
+      },
+        "comment": "Instruction float case insensitive"
+    },
+
+    { "name": "entity.name.function.directives",
+      "match": "(?i:bits 16|bits 32|bits 64|use16|use32|use64|\\[bits 16\\]|\\[bits 32\\]|\\[bits 64\\]|default|section|segment|absolute|extern|global|common|cpu)",
+      "captures": {
+        "1": { "name": "entity.name.function.directives" }
+      },
+        "comment": "Names Pseudo Instructions case insensitive"
+    },
 
     { "name": "comment.line",
       "match": "\\s?(;.*)$",
