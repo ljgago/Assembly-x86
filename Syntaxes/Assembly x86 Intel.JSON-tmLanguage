@@ -209,7 +209,6 @@
         "1": { "name": "constant.numeric.hex" }
       },
       "comment": "Exadecimal numbers format: 0xFF"
-
     },
 
     { "name": "constant.numeric.hex",
