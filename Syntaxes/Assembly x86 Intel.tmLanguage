@@ -327,7 +327,7 @@
 			<key>comment</key>
 			<string>Names Pseudo Instructions case insensitive</string>
 			<key>match</key>
-			<string>(?i:db|dw|dd|dq|dt|do|resb|resw|resd|resq|rest|reso|incbin|equ|times|byte|word|dword|qword|tbyte|nosplit|near|far|org|label|struc|endstruc|istruc|iend|at|align|alignb|ends|offset|short|length|size|public|goto|seg|repeat|until)</string>
+			<string>\b(?i:db|dw|dd|dq|dt|do|resb|resw|resd|resq|rest|reso|incbin|equ|times|byte|word|dword|qword|tbyte|nosplit|near|far|org|label|struc|endstruc|istruc|iend|at|align|alignb|ends|offset|short|length|size|public|goto|seg|repeat|until)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -481,7 +481,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.label</string>
+					<string>markup.italic</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -489,7 +489,7 @@
 			<key>match</key>
 			<string>(\w+[:])</string>
 			<key>name</key>
-			<string>keyword.control.label</string>
+			<string>markup.italic</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

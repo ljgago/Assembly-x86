@@ -156,7 +156,7 @@
     },
 
     { "name": "keyword.control",
-      "match": "(?i:db|dw|dd|dq|dt|do|resb|resw|resd|resq|rest|reso|incbin|equ|times|byte|word|dword|qword|tbyte|nosplit|near|far|org|label|struc|endstruc|istruc|iend|at|align|alignb|ends|offset|short|length|size|public|goto|seg|repeat|until)",
+      "match": "\\b(?i:db|dw|dd|dq|dt|do|resb|resw|resd|resq|rest|reso|incbin|equ|times|byte|word|dword|qword|tbyte|nosplit|near|far|org|label|struc|endstruc|istruc|iend|at|align|alignb|ends|offset|short|length|size|public|goto|seg|repeat|until)\\b",
       "captures": {
         "1": { "name": "keyword.control" }
       },
@@ -236,10 +236,10 @@
       "comment": "String caracter"
     },
 
-    { "name": "keyword.control.label",
+    { "name": "markup.italic",
       "match": "(\\w+[:])",
       "captures": {
-          "0": { "name": "keyword.control.label" }
+          "0": { "name": "markup.italic" }
       },
       "comment": "Assembly label"
     }
