@@ -9,6 +9,14 @@
       },
       "comment": "Function names case insensitive"
     }
+
+    { "name": "keyword.control.label",
+      "match": "(\\w+[:])",
+      "captures": {
+          "0": { "name": "keyword.control.label" }
+      },
+      "comment": "Assembly label"
+    }
   ],
   "uuid": "25754b00-678c-41d3-8900-edfd46171dab"
 }
