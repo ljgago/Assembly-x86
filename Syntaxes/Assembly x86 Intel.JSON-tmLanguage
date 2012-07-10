@@ -164,7 +164,7 @@
     },
 
     { "name": "keyword.control",
-      "match": "(?i:%define|%assign|%strlen|%substr|%macro|%endmacro|%rep|%rotate|%o|%if|%elif|%else|%endif|%error|%ifmacro|%ifnmacro|%elifmacro|%elifnmacro|%ifctx|%ifnctx|%elifctx|%elifnctx|%ifind|%elifind|%ifnind|%elifnind|%ifindi|%elifindi|%ifnidni|%elifnidni|%ifid|%ifnum|%ifstr|%push|%pop|%clear|%arg|%stacksize|%local|%line|%!)",
+      "match": "(?i:%include|%define|%assign|%strlen|%substr|%macro|%endmacro|%rep|%rotate|%o|%ifndef|%elif|%else|%endif|%error|%ifmacro|%ifnmacro|%elifmacro|%elifnmacro|%ifctx|%ifnctx|%elifctx|%elifnctx|%ifind|%elifind|%ifnind|%elifnind|%ifindi|%elifindi|%ifnidni|%elifnidni|%ifid|%ifnum|%ifstr|%push|%pop|%clear|%arg|%stacksize|%local|%line|%if|%!)",
       "captures": {
         "1": { "name": "keyword.control" }
       },
@@ -180,7 +180,7 @@
     },
 
     { "name": "entity.name.function.directives",
-      "match": "(?i:bits 16|bits 32|bits 64|use16|use32|use64|\\[bits 16\\]|\\[bits 32\\]|\\[bits 64\\]|default|section|segment|absolute|extern|global|common|cpu)",
+      "match": "\\b(?i:bits 16|bits 32|bits 64|use16|use32|use64|\\[bits 16\\]|\\[bits 32\\]|\\[bits 64\\]|default|section|segment|absolute|extern|global|common|cpu)\\b",
       "captures": {
         "1": { "name": "entity.name.function.directives" }
       },
@@ -204,7 +204,7 @@
     },
 
     { "name": "constant.numeric.hex",
-      "match": "\\b(0x[0-9a-fA-F]+)\\b",
+      "match": "\\b((0x|0X)[0-9a-fA-F]+)\\b",
       "captures": {
         "1": { "name": "constant.numeric.hex" }
       },
@@ -212,7 +212,7 @@
     },
 
     { "name": "constant.numeric.hex",
-      "match": "\\b([0-9a-fA-F]+h)\\b",
+      "match": "\\b([0-9a-fA-F]+(h|H))\\b",
       "captures": {
         "1": { "name": "constant.numeric.hex" }
       },

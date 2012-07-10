@@ -343,7 +343,7 @@
 			<key>comment</key>
 			<string>Names Pseudo Instructions case insensitive</string>
 			<key>match</key>
-			<string>(?i:%define|%assign|%strlen|%substr|%macro|%endmacro|%rep|%rotate|%o|%if|%elif|%else|%endif|%error|%ifmacro|%ifnmacro|%elifmacro|%elifnmacro|%ifctx|%ifnctx|%elifctx|%elifnctx|%ifind|%elifind|%ifnind|%elifnind|%ifindi|%elifindi|%ifnidni|%elifnidni|%ifid|%ifnum|%ifstr|%push|%pop|%clear|%arg|%stacksize|%local|%line|%!)</string>
+			<string>(?i:%include|%define|%assign|%strlen|%substr|%macro|%endmacro|%rep|%rotate|%o|%ifndef|%elif|%else|%endif|%error|%ifmacro|%ifnmacro|%elifmacro|%elifnmacro|%ifctx|%ifnctx|%elifctx|%elifnctx|%ifind|%elifind|%ifnind|%elifnind|%ifindi|%elifindi|%ifnidni|%elifnidni|%ifid|%ifnum|%ifstr|%push|%pop|%clear|%arg|%stacksize|%local|%line|%if|%!)</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -375,7 +375,7 @@
 			<key>comment</key>
 			<string>Names Pseudo Instructions case insensitive</string>
 			<key>match</key>
-			<string>(?i:bits 16|bits 32|bits 64|use16|use32|use64|\[bits 16\]|\[bits 32\]|\[bits 64\]|default|section|segment|absolute|extern|global|common|cpu)</string>
+			<string>\b(?i:bits 16|bits 32|bits 64|use16|use32|use64|\[bits 16\]|\[bits 32\]|\[bits 64\]|default|section|segment|absolute|extern|global|common|cpu)\b</string>
 			<key>name</key>
 			<string>entity.name.function.directives</string>
 		</dict>
@@ -423,7 +423,7 @@
 			<key>comment</key>
 			<string>Exadecimal numbers format: 0xFF</string>
 			<key>match</key>
-			<string>\b(0x[0-9a-fA-F]+)\b</string>
+			<string>\b((0x|0X)[0-9a-fA-F]+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.hex</string>
 		</dict>
@@ -439,7 +439,7 @@
 			<key>comment</key>
 			<string>Exadecimal numbers format: FFh</string>
 			<key>match</key>
-			<string>\b([0-9a-fA-F]+h)\b</string>
+			<string>\b([0-9a-fA-F]+(h|H))\b</string>
 			<key>name</key>
 			<string>constant.numeric.hex</string>
 		</dict>
