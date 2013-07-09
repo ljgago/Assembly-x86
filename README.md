@@ -2,7 +2,7 @@
 
 ## Descripción:
 
-**Assembly x86** es un paquete de resaltado de sintaxis de lenguaje ensamblador tipo Intel y AT&T para **Sublime Text 2**.
+**Assembly x86** es un paquete de resaltado de sintaxis de lenguaje ensamblador tipo Intel x86 y AT&T para **Sublime Text 2**.
 
 ## Uso:
 
@@ -22,7 +22,7 @@ En la carpeta **Assembly-x86/Syntaxes** se encuentran los archivo **Assembly x86
 
 ## Description:
 
-**Assembly x86 Intel** is a syntax highlighting package of assembler lang Intel and AT&T type for **Sublime Text 2**.
+**Assembly x86 Intel** is a syntax highlighting package of assembler lang Intel x86 and AT&T type for **Sublime Text 2**.
 
 ## Usage:
 
